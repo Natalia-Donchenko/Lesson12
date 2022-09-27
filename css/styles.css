@@ -98,6 +98,8 @@ html {
 
 
 /* main  */
+
+/* title */
 .title {
   background-color: rgb(105, 65, 65);
   display: flex;
@@ -155,6 +157,102 @@ html {
   min-width: 180px;
   min-height: 60px;
   padding: 5px;
+}
+
+/* logos */
+.logos {
+  background-color: #FF9C7D;
+  display: flex;
+  justify-content: center;
+}
+
+.logos__conteiner {
+  display: block;
+  padding: 106px 0;
+}
+
+.logos__text {
+  border: 1px solid red;
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+  text-align: center;
+  padding: 0 250px;
+
+}
+
+.logos__logo {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 44px;
+}
+
+/* cards */
+.cards {
+  background-color: rgb(105, 65, 65);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.cards__conteiner {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 50%);
+  padding: 100px 20px 95px;
+  row-gap: 250px;
+}
+
+.cards__item {
+  background-color: rgb(139, 103, 55);
+  border: 1px solid red;
+  align-self: center;
+  /* justify-self: center; */
+  
+}
+
+.cards__item-rigtht {
+  justify-self: end;
+}
+
+.cards__item-left {
+  justify-self: start;
+}
+
+.cards__item-text_rigth {
+  padding: 0 0 0 150px;
+}
+
+.cards__item-text_left {
+  padding: 0 150px 0 0;
+}
+
+.cards__item h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  color: black;
+}
+
+.cards__item-text_primary {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+
+.cards__item-text_secondary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
 }
 
 /* footer */
