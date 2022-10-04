@@ -26,7 +26,8 @@ ul {
 
 .container {
   display: flex;
-  width: 1330px;
+  max-width: 1330px;
+  margin: 0 auto;
 }
 
 .buttons {
@@ -75,21 +76,23 @@ ul {
 .header__container {
   padding: 25px 0;
   gap: 51px;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  flex-grow: 1;
 }
 
 .header__items {
   display: flex;
-  gap: 348px;
   align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .header__menu {
   display: flex;
   gap: 42px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  max-width: 907px;
 }
 
 .header__menu-item a {
@@ -144,9 +147,12 @@ ul {
   line-height: 25px;
 }
 
+.title__img {
+  min-width: 759px;
+}
+
 .title__img img {
-  width: 759px;
-  height: 529px;
+  width: 100%
 }
 
 .btn__title {
@@ -186,8 +192,10 @@ ul {
 .logos__logo {
   display: flex;
   padding: 0 20px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 103px;
 }
 
 /* cards */
@@ -208,6 +216,14 @@ ul {
 
 .cards__item-reverse {
   flex-direction: row-reverse;
+}
+
+.cards__item-img {
+  min-width: 632px;
+}
+
+.cards__item-img img {
+  max-width: 100%;
 }
 
 .cards__item-text {
@@ -366,6 +382,11 @@ ul {
 .quote__container {
   min-width: 1330px;
   padding: 53px 60px 105px 30px;
+  justify-content: space-between
+}
+
+.quote__text {
+  max-width: ;
 }
 
 .quote__text-primary {
@@ -386,6 +407,14 @@ ul {
   color: #000000;
 }
 
+.quote__photo {
+  min-width: 310px;
+}
+
+.quote__photo img {
+  max-width: 100%;
+}
+
 /* software */
 .software__wrapper {
   background-color: #DABC98;
@@ -400,6 +429,14 @@ ul {
   display: flex;
   align-items: center;
   border-right: 1px solid black;
+}
+
+.software__text-img {
+  min-width: 176px;
+}
+
+.software__text-img img {
+  max-width: 100%;
 }
 
 .software__text p {
@@ -464,9 +501,14 @@ ul {
 
 .integrate__container-img {
   display: flex;
+  min-width: 1023px;
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+}
+
+.integrate__container-img img {
+  max-width: 100%;
 }
 
 .btn__integrate {
@@ -533,6 +575,11 @@ ul {
 .footer-menu__case-studies {
   margin-right: 140px;
   flex-direction: column;
+  min-width: 300px;
+}
+
+.footer-menu__case-studies img {
+  max-width: 100%;
 }
 
 .footer-menu__case-studies h3 {
@@ -620,6 +667,7 @@ ul {
 .footer__bottom {
   padding: 52px 100px 43px 20px;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .footer__bottom-left {
